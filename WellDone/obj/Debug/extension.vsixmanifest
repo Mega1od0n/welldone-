@@ -1,0 +1,20 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="WellDone.ec3f963d-1054-4e12-92da-2efccb30228d" Version="1.0" Language="en-US" Publisher="Aleksandr Dashkevich" />
+    <DisplayName>Well Done!</DisplayName>
+    <Description xml:space="preserve">The best way to support during difficult work</Description>
+    <Icon>Resources\Icon.png</Icon>
+    <PreviewImage>Resources\Icon.png</PreviewImage>
+  </Metadata>
+  <Installation AllUsers="true" InstalledByMsi="true">
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+  </Installation>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="WellDone.pkgdef" />
+  </Assets>
+</PackageManifest>
